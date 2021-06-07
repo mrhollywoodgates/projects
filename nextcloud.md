@@ -103,14 +103,15 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 	    nextcloud_network:
 	```
 	A breakdown of this file: 
-		* Update the fields for passwords and DNS address and email with your desired information. 
-		* Used to define all the Docker elements that will be used.
-		* Creates shared docker volumes and docker network for all the containers. 
-		* Starts an nginx-proxy container to handle all HTPP traffic using the letsencrypt certificate. 
-		* Starts a letsencrypt container to create certificates for use with proxy container
-		* Starts a database container to use with Nextcloud. Stores database in a docker volume (`db`).
-		* Starts a Nextcloud container using all the above. 
-		* All paths that begin with `./` are relative paths to the location of the `docker-compose.yml` file. So the Nextlcoud app, config, data, etc will be stored locally.  Paths that begin with `nextcloud` or `db` are stored in a docker volume. 
+	
+	* Update the fields for passwords and DNS address and email with your desired information. 
+	* Used to define all the Docker elements that will be used.
+	* Creates shared docker volumes and docker network for all the containers. 
+	* Starts an nginx-proxy container to handle all HTPP traffic using the letsencrypt certificate. 
+	* Starts a letsencrypt container to create certificates for use with proxy container
+	* Starts a database container to use with Nextcloud. Stores database in a docker volume (`db`).
+	* Starts a Nextcloud container using all the above. 
+	* All paths that begin with `./` are relative paths to the location of the `docker-compose.yml` file. So the Nextlcoud app, config, data, etc will be stored locally.  Paths that begin with `nextcloud` or `db` are stored in a docker volume. 
 
 # Starting the containers
 
