@@ -120,10 +120,10 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 3. This will start all the containers. Wait about 3 min for everything to settle. The first time it starts up takes the longest. 
 4. Open a browser to https://your-dns.duckdns.org
 5. Go through first time setup for nextcloud:
-		1. Create an admin user and password
-		2. Select `mysql` as the database type
-			1. Enter the username and password for the database user (not root user) defined in the `docker-compose.yml`
-			2. Enter `db` as the database host (the last field in the prompt). 
+	1. Create an admin user and password
+	2. Select `mysql` as the database type
+		1. Enter the username and password for the database user (not root user) defined in the `docker-compose.yml`
+		2. Enter `db` as the database host (the last field in the prompt). 
 6. Hit continue to complete setup. 
 
 Don't go further! 
